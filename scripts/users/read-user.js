@@ -55,6 +55,10 @@
         });
     }
 
+    function readPostsById() {
+        setStatus('PREPARING GET REQUEST');
+    }
+
     // default initialisation
     readAll();
 
@@ -73,6 +77,6 @@
         event.preventDefault(); // prevent default page refresh on form submission
         if (requestSelector.value == 'ALL') readAll();
         else if (requestSelector.value == 'ID') readById();
-        else if (requestSelector.value == 'POSTS') readPostsByID();
+        else if (requestSelector.value == 'POSTS') readPostsById();
     });
 })();
