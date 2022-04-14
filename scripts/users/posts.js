@@ -5,7 +5,7 @@ function Post(userId, title, body, id = null) {
     this.id = id;
 }
 
-const postHeaders = ['userId', 'id', 'title', 'body'];
+const postHeaders = ['id', 'title', 'body'];
 
 function renderPostTable(posts, containerElement) {
     const tableManager = new TableManager();
