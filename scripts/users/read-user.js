@@ -73,5 +73,6 @@
         event.preventDefault(); // prevent default page refresh on form submission
         if (requestSelector.value == 'ALL') readAll();
         else if (requestSelector.value == 'ID') readById();
+        else if (requestSelector.value == 'POSTS') readPostsByID();
     });
 })();
