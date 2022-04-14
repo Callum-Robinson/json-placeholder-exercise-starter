@@ -58,7 +58,7 @@
     function readPostsById() {
         setStatus('PREPARING GET REQUEST');
 
-        fetch(`https://jsonplaceholder.typicode.com/${id.value}/posts`, {
+        fetch(`https://jsonplaceholder.typicode.com/users/${id.value}/posts`, {
             method: 'GET'
         }).then(response => {
             setStatus('RECEIVED RESPONSE');
