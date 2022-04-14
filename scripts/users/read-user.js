@@ -64,6 +64,8 @@
             toggleIdVisibility(false);
         } else if (this.value == 'ID') {
             toggleIdVisibility(true);
+        } else if (this.value == 'POSTS') {
+            toggleIdVisibility(true);
         }
     });
 
