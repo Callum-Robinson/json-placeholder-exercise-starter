@@ -4,3 +4,5 @@ function Post(userId, title, body, id = null) {
     this.body = body;
     this.id = id;
 }
+
+const postHeaders = ['userId', 'id', 'title', 'body'];
