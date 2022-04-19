@@ -87,6 +87,8 @@
             toggleIdVisibility(true);
         } else if (this.value == 'POSTS') {
             toggleIdVisibility(true);
+        } else if (this.value == 'TODOS') {
+            toggleIdVisibility(true);
         }
     });
 
