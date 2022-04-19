@@ -76,6 +76,27 @@
         });
     }
 
+    function readTodosByUserId() {
+        setStatus('PREPARING GET REQUEST');
+
+        fetch(`https://jsonplaceholder.typicode.com/users/${id.value}/todos`, {
+            method: 'GET'
+        }).then(response => {
+            setStatus('RECEIVED RESPONSE');
+            if (response.ok) return response.json();
+            else throw new Error('Uh oh, something went wrong...');
+        })
+        .then(todos => {
+            setStatus('RENDERING TABLE');
+            renderTodoTable(todos, dataTable);
+            setStatus('RESPONSE RENDERED INTO TABLE');
+        })
+        .catch(error => {
+            setStatus('ERROR ENCOUNTERED');
+            handleError(error);
+        })
+    }
+
     // default initialisation
     readAll();
 
