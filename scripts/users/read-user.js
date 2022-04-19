@@ -97,5 +97,6 @@
         if (requestSelector.value == 'ALL') readAll();
         else if (requestSelector.value == 'ID') readById();
         else if (requestSelector.value == 'POSTS') readPostsByUserId();
+        else if (requestSelector.value == 'TODOS') readTodosByUserId();
     });
 })();
